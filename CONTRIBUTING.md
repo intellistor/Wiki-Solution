@@ -1,9 +1,3 @@
-
----
-
-### 📄 `CONTRIBUTING.md`
-
-```markdown
 # 🤝 Guia de Contribuição
 
 Obrigado por querer contribuir com o Wiki Solution! Aqui estão algumas orientações para facilitar sua colaboração.
@@ -24,6 +18,3 @@ Obrigado por querer contribuir com o Wiki Solution! Aqui estão algumas orienta�
 ## 🔹 Dúvidas?
 
 Abra uma issue ou entre em contato com os mantenedores.
-
----
-
