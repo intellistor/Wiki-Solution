@@ -17,21 +17,22 @@ Este repositório reúne toda a documentação relacionada à solução, servind
 ## 🏗️ Arquitetura da Solução
 
 Diagramas, fluxos e explicações sobre os componentes que compõem a solução.  
-➡️ [`docs/arquitetura.md`](docs/arquitetura.md)
+➡️ [Arquitetura da Solução](docs/arquitetura.md)
 
 ---
 
 ## 🧑‍💻 Padrões de Desenvolvimento
 
 Diretrizes para escrita de código, organização de repositórios, nomenclaturas e boas práticas.  
-➡️ [`docs/nomenclatura_modulos.md`](docs/nomenclatura_modulos.md)
+➡️ [Padrões de Nomenclatura - Módulos](docs/nomenclatura_modulos.md)<br>
+➡️ [Padrões de Nomenclatura - Classes e Funções](docs/nomenclatura_class_funcao.md)
 
 ---
 
 ## 📘 Guia de Uso
 
 Instruções para instalação, configuração, execução e integração dos componentes da solução.  
-➡️ [`docs/guia-de-uso.md`](#)
+➡️ [Guia de Uso](#)
 
 ---
 
@@ -39,7 +40,7 @@ Instruções para instalação, configuração, execução e integração dos co
 
 Quer colaborar com a documentação?  
 Confira nosso guia de contribuição:  
-➡️ [`CONTRIBUTING.md`](CONTRIBUTING.md)
+➡️ [Contribuindo](CONTRIBUTING.md)
 
 ---
 
