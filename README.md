@@ -23,7 +23,7 @@ A proposta é facilitar a comunicação entre times, promover consistência e ga
 ## 📌 Documento Principal
 
 Para acompanhar atualizações e navegar pela documentação, acesse o índice principal:  
-➡️ [`docs/indice.md`](docs/indice.md)
+➡️ [`INDICE.md`](INDICE.md)
 
 ---
 
