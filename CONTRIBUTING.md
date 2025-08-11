@@ -17,4 +17,8 @@ Obrigado por querer contribuir com o Wiki Solution! Aqui estão algumas orienta�
 
 ## 🔹 Dúvidas?
 
-Abra uma issue ou entre em contato com os mantenedores.
+Em caso de dúvidas, sugestões ou contribuições, entre em contato com os mantenedores:
+
+- **Eloi Salton** — [eloi.externo@petacorp.com.br](mailto:eloi.externo@petacorp.com.br)
+- **Renato de Carvalho Machado** — [renato.externo@petacorp.com.br](mailto:renato.externo@petacorp.com.br)
+
