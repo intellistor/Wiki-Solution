@@ -24,14 +24,14 @@ Diagramas, fluxos e explicações sobre os componentes que compõem a solução.
 ## 🧑‍💻 Padrões de Desenvolvimento
 
 Diretrizes para escrita de código, organização de repositórios, nomenclaturas e boas práticas.  
-➡️ [`docs/padroes.md`](docs/padroes.md)
+➡️ [`docs/nomenclatura_modulos.md`](docs/nomenclatura_modulos.md)
 
 ---
 
 ## 📘 Guia de Uso
 
 Instruções para instalação, configuração, execução e integração dos componentes da solução.  
-➡️ [`docs/guia-de-uso.md`](docs/guia-de-uso.md)
+➡️ [`docs/guia-de-uso.md`](#)
 
 ---
 
