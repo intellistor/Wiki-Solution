@@ -1,4 +1,4 @@
-# 📘 Guia de Nomenclatura de Módulos – SM/Intellistor
+# 📘 Padões de Nomenclatura - Módulos
 
 Este guia define o padrão oficial de nomenclatura para módulos Python no projeto **SM/Intellistor**, promovendo consistência, clareza e escalabilidade.
 
