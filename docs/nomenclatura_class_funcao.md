@@ -52,3 +52,14 @@
 ### 📚 Sugestão de Leitura
 
 - [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/)
+
+---
+
+## ✉️ Contato
+
+Em caso de dúvidas, sugestões ou contribuições, entre em contato com os responsáveis pelo projeto:
+
+- **Eloi Salton** — [eloi.externo@petacorp.com.br](mailto:eloi.externo@petacorp.com.br)
+- **Renato de Carvalho Machado** — [renato.externo@petacorp.com.br](mailto:renato.externo@petacorp.com.br)
+
+---
