@@ -41,6 +41,8 @@ DADO QUE [...]
 QUANDO [...]  
 ENTÃO [...]  
 
+---
+
 ## ✉️ Contato
 
 Em caso de dúvidas, sugestões ou contribuições, entre em contato com os responsáveis pelo projeto:
