@@ -119,7 +119,15 @@ Combine domínio + tecnologia + sufixo se necessário (ex.: lun_huawei_client.py
 - Se o módulo se encaixar em dois papéis, divida em dois arquivos (ex.: um _client e um _service)
 - Use sempre inglês, snake_case, nomes **curtos e claros`
 
+---
+## ✉️ Contato
 
+Em caso de dúvidas, sugestões ou contribuições, entre em contato com os responsáveis pelo projeto:
+
+- **Eloi Salton** — [eloi.externo@petacorp.com.br](mailto:eloi.externo@petacorp.com.br)
+- **Renato de Carvalho Machado** — [renato.externo@petacorp.com.br](mailto:renato.externo@petacorp.com.br)
+
+---
 
 
 
