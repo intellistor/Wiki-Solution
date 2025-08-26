@@ -7,7 +7,7 @@ Cada sprint tem duração de **10 dias úteis**, com os seguintes marcos:
 - 📢 **Retrospectiva & Entrega**: apresentação, feedback e melhoria contínua
 
 ---
-## 📌 Sprints com Marcos e Tempo Estimado (140h por sprint)
+## 📌 Sprints com Marcos e Tempo Estimado (120h por sprint)
 
 | Sprint | Período              | Planejamento | Execução       | Revisão/Testes | Retrospectiva & Entrega | Tempo Estimado | Observações                        |
 |--------|----------------------|--------------|----------------|----------------|--------------------------|----------------|------------------------------------|
