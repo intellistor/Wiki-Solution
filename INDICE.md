@@ -30,7 +30,13 @@ Diretrizes para escrita de código, organização de repositórios, nomenclatura
 ➡️ [Modelo de História de Usuário (HU)](docs/modelo_hu.md)<br>
 
 ---
+## 📅 Calendário das Sprints do 2º Semestre de 2025
+O calendário de alocação é essencial para garantir previsibilidade, otimizar recursos e alinhar entregas com a capacidade real da equipe.<br>
+➡️ [Calendário](CALENDARIO.md)<br>
 
+
+
+---
 ## 📘 Guia de Uso
 
 Instruções para instalação, configuração, execução e integração dos componentes da solução.  
