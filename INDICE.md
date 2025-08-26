@@ -24,8 +24,10 @@ Diagramas, fluxos e explicações sobre os componentes que compõem a solução.
 ## 🧑‍💻 Padrões de Desenvolvimento
 
 Diretrizes para escrita de código, organização de repositórios, nomenclaturas e boas práticas.  
+➡️ [Ritos e Cerimônias](docs/ritos.md)
 ➡️ [Padrões de Nomenclatura - Módulos](docs/nomenclatura_modulos.md)<br>
 ➡️ [Padrões de Nomenclatura - Classes e Funções](docs/nomenclatura_class_funcao.md)
+➡️ [Modelo de História de Usuário (HU)](docs/modelo_hu.md)
 
 ---
 
