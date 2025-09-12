@@ -47,6 +47,12 @@ Este documento descreve os status codes padronizados utilizados nos endpoints da
 - Usado em tentativas de criação de recursos que já existem (ex.: e-mail duplicado, chave única violada).
 
 ---
+## ⚠️ 422 → Erro de validação do schema (Unprocessable Entity)
+- Indica que o servidor entendeu a requisição, mas os dados não seguem o formato esperado pelo schema de validação (Pydantic).
+- Usado automaticamente pelo FastAPI quando os parâmetros do body, query ou path não passam nas regras definidas no modelo (BaseModel).- 
+- Exemplo: campo obrigatório ausente, tipo incorreto (str em vez de int), formato inválido de e-mail, etc.
+
+---
 ## ❌ 500 → Erro interno inesperado
 - Indica que ocorreu um erro não tratado no servidor.
 - Usado como fallback para falhas inesperadas (ex.: exceção não capturada, indisponibilidade de serviço interno).
