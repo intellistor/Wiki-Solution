@@ -25,6 +25,12 @@ Este documento descreve os status codes padronizados utilizados nos endpoints da
 - Usado quando a entrada não passa em validações de formato, obrigatoriedade ou consistência.
 
 ---
+## ⚠️ 401 → Não autenticado (Unauthorized)
+- Indica que o usuário não está autenticado ou o token de acesso é inválido/expirado.
+- Usado quando o cliente não fornece credenciais válidas.
+- Exemplo: ausência de JWT no header Authorization.
+
+---
 ## ⚠️ 403 → Acesso negado (permissões insuficientes)
 - Indica que o usuário não possui as permissões necessárias para executar a operação.
 - Usado em endpoints protegidos por roles ou serviços específicos.
