@@ -125,8 +125,8 @@ Combine domínio + tecnologia + sufixo se necessário (ex.: lun_huawei_client.py
 Em caso de dúvidas, sugestões ou contribuições, entre em contato com os responsáveis pelo projeto:
 
 - **Eloi Salton** — [eloi.externo@petacorp.com.br](mailto:eloi.externo@petacorp.com.br)
+- **Lucas Assis Pereira** - [lucas.pereira@petacorp.com.br](lucas.pereira@petacorp.com.br)
 - **Renato de Carvalho Machado** — [renato.externo@petacorp.com.br](mailto:renato.externo@petacorp.com.br)
-
 ---
 
 
