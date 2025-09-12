@@ -14,6 +14,12 @@ Este documento descreve os status codes padronizados utilizados nos endpoints da
 - Retorna o recurso criado ou informações de referência (ex.: id).
 
 ---
+## ✅ 202 → Requisição aceita (processamento assíncrono) 
+- Indica que a requisição foi **aceita pelo servidor**, mas o processamento ainda não foi concluído.  
+- Usado em operações **assíncronas**, como "esqueci minha senha" (disparo de e-mail), geração de relatórios ou tarefas em background.  
+- O corpo da resposta contém apenas uma **mensagem de confirmação**, sem o resultado final da opera
+
+---
 ## ✅ 204 → Exclusão com sucesso (sem corpo)
 - Indica que a operação de exclusão foi concluída.
 - Usado em endpoints de DELETE.
