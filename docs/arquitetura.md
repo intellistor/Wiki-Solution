@@ -1,4 +1,4 @@
-# Intellistor Platform
+# Intellistor Solution
 
 ## 1️⃣ Arquitetura Geral da Solução
 
