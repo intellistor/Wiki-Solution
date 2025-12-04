@@ -69,7 +69,7 @@ Este documento descreve os status codes padronizados utilizados nos endpoints da
 Qualquer rota da API deve usar apenas esses status codes, garantindo padronização e clareza no consumo.
 
 ---
-## 🔹 Dúvidas?
+## 📬 **Contato**
 
 Em caso de dúvidas, sugestões ou contribuições, entre em contato com os mantenedores:
 
