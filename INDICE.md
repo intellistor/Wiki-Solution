@@ -1,6 +1,6 @@
 ## 🔍 Visão Geral
 
-Este repositório reúne toda a documentação relacionada à solução, servindo como referência única para desenvolvedores, analistas, gestores e demais colaboradores.
+Este repositório reúne toda a documentação relacionada à **Intellistor Solution**, servindo como referência única para desenvolvedores, analistas, gestores e demais colaboradores.
 
 ---
 
