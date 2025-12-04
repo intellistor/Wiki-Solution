@@ -40,7 +40,7 @@ Instruções para instalação, configuração, execução e integração dos co
 
 Quer colaborar com a documentação?  
 Confira nosso guia de contribuição:  
-➡️ [Contribuindo](CONTRIBUTING.md)
+➡️ [Contribuindo](docs/contributing.md)
 
 ---
 
