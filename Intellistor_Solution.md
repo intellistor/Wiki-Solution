@@ -7,7 +7,10 @@ A **Intellistor Solution** utiliza um modelo de licenciamento híbrido, composto
 
 ## 🏗️ Ambiente do Cliente (On-premise):
 > Solução instalada localmente, operando em modo seguro e validando licenças através do Licensing Client.
+---
+<img width="1413" height="572" alt="image" src="https://github.com/user-attachments/assets/ea8f734a-ec56-422f-9fd0-d1df6bb79ad3" />
 
+---
 A arquitetura adota princípios de **segurança zero-trust, assinaturas digitais Ed25519, CRL distribuída via S3 e módulos independentes**, que somente funcionam após aprovação da licença.
 
 🔐 **Princípios de segurança Zero-Trust**
@@ -33,6 +36,9 @@ A arquitetura adota princípios de **segurança zero-trust, assinaturas digitais
     O sistema verifica se você tem permissão para usar aquele módulo.
     Isso impede uso não autorizado e garante controle comercial e técnico.
 ---
+
+
+
 
 ## 🟦 2. Ambiente da Peta (Intranet) – Autoridade Central de Licenciamento
 
