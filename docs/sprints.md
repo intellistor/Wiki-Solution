@@ -47,12 +47,11 @@ Cada sprint tem duração de **10 dias úteis**, com os seguintes marcos:
 - Última sprint pode ser usada para planejamento estratégico ou reparos leve.
 
 ---
-
-## 🔹 Dúvidas?
+## 📬 **Contato**
 
 Em caso de dúvidas, sugestões ou contribuições, entre em contato com os mantenedores:
 
 - **Eloi Salton** — [eloi.externo@petacorp.com.br](mailto:eloi.externo@petacorp.com.br)
 - **Lucas Assis Pereira** - [lucas.pereira@petacorp.com.br](lucas.pereira@petacorp.com.br)
 - **Renato de Carvalho Machado** — [renato.externo@petacorp.com.br](mailto:renato.externo@petacorp.com.br)
----
+
