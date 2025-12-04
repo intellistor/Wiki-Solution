@@ -17,7 +17,7 @@ Este repositório reúne toda a documentação relacionada à solução, servind
 ## 🏗️ Arquitetura da Solução
 
 Diagramas, fluxos e explicações sobre os componentes que compõem a solução.  
-➡️ [Arquitetura da Solução](docs/arquitetura.md)
+➡️ [Arquitetura da Solução](Intellistor_Solution.md)
 
 ---
 
