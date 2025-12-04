@@ -54,10 +54,8 @@ Este documento descreve o plano de cerimônias para uma equipe ágil enxuta. O o
 
 > _Este plano pode ser adaptado conforme a maturidade da equipe e a evolução do projeto. A agilidade está na capacidade de inspecionar e adaptar continuamente._
 
-
 ---
-
-## 🔹 Dúvidas?
+## 📬 **Contato**
 
 Em caso de dúvidas, sugestões ou contribuições, entre em contato com os mantenedores:
 
@@ -65,4 +63,3 @@ Em caso de dúvidas, sugestões ou contribuições, entre em contato com os mant
 - **Lucas Assis Pereira** - [lucas.pereira@petacorp.com.br](lucas.pereira@petacorp.com.br)
 - **Renato de Carvalho Machado** — [renato.externo@petacorp.com.br](mailto:renato.externo@petacorp.com.br)
 
----
