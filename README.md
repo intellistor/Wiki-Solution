@@ -38,19 +38,10 @@ Você pode incluir diversos arquivos `.md` organizados por tema. Exemplos:
 - `docs/glossario.md` — Termos e definições usados no projeto
 
 ---
-
-## 🤝 Contribuindo
-
-Este repositório é aberto à colaboração.  
-Se você tem sugestões, correções ou novos conteúdos, consulte o arquivo [`CONTRIBUTING.md`](CONTRIBUTING.md) para saber como contribuir de forma alinhada com os padrões do projeto.
-
----
-
-## 🔹 Dúvidas?
+# 📬 **Contato**
 
 Em caso de dúvidas, sugestões ou contribuições, entre em contato com os mantenedores:
 
 - **Eloi Salton** — [eloi.externo@petacorp.com.br](mailto:eloi.externo@petacorp.com.br)
 - **Lucas Assis Pereira** - [lucas.pereira@petacorp.com.br](lucas.pereira@petacorp.com.br)
 - **Renato de Carvalho Machado** — [renato.externo@petacorp.com.br](mailto:renato.externo@petacorp.com.br)
----
