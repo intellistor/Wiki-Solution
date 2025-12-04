@@ -24,7 +24,7 @@ Diretrizes para escrita de código, organização de repositórios, nomenclatura
 ---
 ## 📅 Calendário das Sprints do 2º Semestre de 2025
 O calendário de alocação é essencial para garantir previsibilidade, otimizar recursos e alinhar entregas com a capacidade real da equipe.<br>
-➡️ [Calendário](CALENDARIO.md)<br>
+➡️ [Calendário](docs/sprints.md)<br>
 
 
 
