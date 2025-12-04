@@ -38,7 +38,7 @@ Você pode incluir diversos arquivos `.md` organizados por tema. Exemplos:
 - `docs/glossario.md` — Termos e definições usados no projeto
 
 ---
-# 📬 **Contato**
+## 📬 **Contato**
 
 Em caso de dúvidas, sugestões ou contribuições, entre em contato com os mantenedores:
 
