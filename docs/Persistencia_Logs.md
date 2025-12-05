@@ -3,12 +3,13 @@
 A persistência externa de logs é um requisito fundamental para auditoria, troubleshooting e observabilidade corporativa.  
 Este guia descreve como configurar corretamente a escrita de logs **fora dos contêineres Docker**, garantindo retenção mesmo após reinicialização ou recriação dos serviços.
 
-Aplicável à todas as APIs:
+Aplicável à todas as APIs e Plataforma:
 
 - 🔑 Auth  
 - 🔄 Licensing Client  
 - 📡 Integrator  
-- 🧭 Management  
+- 🧭 Management
+- 🖥️ Intellistor Platform
 
 ---
 
