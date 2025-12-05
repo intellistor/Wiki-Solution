@@ -48,7 +48,7 @@ Este documento descreve o plano de cerimônias para uma equipe ágil enxuta. O o
 | Gestão de Backlog  | Jira        |
 | Comunicação        | Teams    |
 | Documentação       | GitHub          |
-| Repositóri        |  GitHub               |
+| Repositório        |  GitHub               |
 
 ---
 
