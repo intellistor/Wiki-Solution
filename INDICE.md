@@ -45,7 +45,7 @@ Confira nosso guia de contribuição:
 
 Em caso de dúvidas, sugestões ou contribuições, entre em contato com os mantenedores:
 
-- 🌐 **Site comercial da solução** — [www.intellistor.com](https://www.intellistor.com)
+- 🌐 **Site comercial da solução** — [www.intellistor.com](https://www.intellistor.com.br)
 - 📧 **Eloi Salton** — [eloi.externo@petacorp.com.br](mailto:eloi.externo@petacorp.com.br)
 - 📧 **Lucas Assis Pereira** — [lucas.pereira@petacorp.com.br](lucas.pereira@petacorp.com.br)
 - 📧 **Renato de Carvalho Machado** — [renato.externo@petacorp.com.br](mailto:renato.externo@petacorp.com.br)
