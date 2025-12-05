@@ -1,17 +1,21 @@
 # 🏛️ 1. Visão Geral
 
-A **Intellistor Solution** utiliza um modelo de licenciamento híbrido, composto por:
+A **Intellistor Solution** adota um modelo de licenciamento híbrido, oferecendo flexibilidade tanto para organizações que priorizam investimentos de capital (CAPEX) quanto para aquelas que operam com despesas recorrentes (OPEX). Essa abordagem foi desenvolvida para atender às demandas estratégicas de grandes corporações que exigem máxima eficiência na gestão de sua infraestrutura de storage e backup.
 
-## 🏗️ Ambiente da Peta (Intranet / Control Center / Licenciamento):
-> Autoridade central para emissão, supervisão e revogação de licenças.
-
-## 🏗️ Ambiente do Cliente (On-premise):
-> Solução instalada localmente, operando em modo seguro e validando licenças através do Licensing Client.
 ---
 <img width="1413" height="572" alt="image" src="https://github.com/user-attachments/assets/ea8f734a-ec56-422f-9fd0-d1df6bb79ad3" />
 
 ---
-A arquitetura adota princípios de **segurança zero-trust, assinaturas digitais Ed25519, CRL distribuída via S3 e módulos independentes**, que somente funcionam após aprovação da licença.
+## 🏗️ Ambiente da Peta (Intranet / Control Center / Licenciamento):
+> Autoridade central para emissão, supervisão e revogação de licenças.
+
+
+## 🏗️ Ambiente do Cliente (On-premise):
+> Solução instalada localmente, operando em modo seguro e validando licenças através do Licensing Client.
+
+
+---
+A arquitetura da **Intellistor Solution** incorpora princípios de **segurança zero-trust, com autenticação avançada via assinaturas digitais Ed25519 e gerenciamento de certificados por meio de CRL distribuída em S3**. Os módulos independentes são ativados exclusivamente após aprovação da licença, garantindo confiabilidade, escalabilidade e **proteção integral em ambientes M2M**.
 
 🔐 **Princípios de segurança Zero-Trust**
 1. Zero-Trust é um modelo de segurança que parte do princípio de não confiar em ninguém por padrão, nem dentro nem fora da rede.
@@ -35,14 +39,21 @@ A arquitetura adota princípios de **segurança zero-trust, assinaturas digitais
 2. Cada módulo só funciona após aprovação da licença, ou seja:
     O sistema verifica se você tem permissão para usar aquele módulo.
     Isso impede uso não autorizado e garante controle comercial e técnico.
+
+🔑 **Solução M2M**
+1. A comunicação **Machine-to-Machine (M2M)** é protegida por um sistema baseado em pares de chaves criptográficas.
+2. Cada dispositivo ou serviço possui uma chave privada e uma chave pública associada.
+3. O processo garante:
+   * _Autenticação forte_: apenas dispositivos com chaves válidas podem se comunicar.
+   * _Confidencialidade_: dados são criptografados de forma que apenas o destinatário autorizado consiga decifrar.
+   * _Integridade_: qualquer alteração indevida nas mensagens é detectada.
+4. Essa abordagem elimina dependência de tokens temporários e assegura que toda interação M2M seja autenticada e confiável, alinhada ao modelo de licenciamento híbrido.
+
 ---
-
-
-
 
 ## 🟦 2. Ambiente da Peta (Intranet) – Autoridade Central de Licenciamento
 
-O ambiente da Peta é responsável por licenciar, supervisionar e gerenciar todas as instâncias da Intellistor Platform instaladas nos clientes.
+O ambiente da Peta é responsável por licenciar, supervisionar e gerenciar todas as instâncias da **Intellistor Platform** instaladas nos clientes.
 
 ### Componentes
 
