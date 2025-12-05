@@ -1,8 +1,10 @@
-# 📚 Wiki Solution
+# 📚 Intellistor Wiki-Solution
 
 **Wiki Solution** é o repositório central de documentação técnica e funcional da **Intellistor Solution**.  
 Seu objetivo é reunir, organizar e manter acessível todo o conhecimento necessário para o desenvolvimento, manutenção e evolução dos sistemas que compõem o projeto.
-> Para informações comerciais e planos de licenciamento, acesse www.intellistor.com.
+<br><br>
+🔗 Para informações comerciais, planos de licenciamento e soluções aplicadas ao mercado, acesse o site oficial: [www.intellistor.com](https://www.intellistor.com)
+
 ---
 
 ## 🧾 Sobre o Repositório
