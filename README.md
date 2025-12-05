@@ -3,7 +3,7 @@
 **Wiki Solution** é o repositório central de documentação técnica e funcional da **Intellistor Solution**.  
 Seu objetivo é reunir, organizar e manter acessível todo o conhecimento necessário para o desenvolvimento, manutenção e evolução dos sistemas que compõem o projeto.
 <br><br>
-🔗 Para informações comerciais, planos de licenciamento e soluções aplicadas ao mercado, acesse o site oficial: [www.intellistor.com](https://www.intellistor.com)
+🔗 Para informações comerciais, planos de licenciamento e soluções aplicadas ao mercado, acesse o site oficial: [www.intellistor.com](https://www.intellistor.com.br)
 
 ---
 
@@ -44,7 +44,7 @@ Você pode incluir diversos arquivos `.md` organizados por tema. Exemplos:
 
 Em caso de dúvidas, sugestões ou contribuições, entre em contato com os mantenedores:
 
-- 🌐 **Site comercial da solução** — [www.intellistor.com](https://www.intellistor.com)
+- 🌐 **Site comercial da solução** — [www.intellistor.com](https://www.intellistor.com.br)
 - 📧 **Eloi Salton** — [eloi.externo@petacorp.com.br](mailto:eloi.externo@petacorp.com.br)
 - 📧 **Lucas Assis Pereira** — [lucas.pereira@petacorp.com.br](lucas.pereira@petacorp.com.br)
 - 📧 **Renato de Carvalho Machado** — [renato.externo@petacorp.com.br](mailto:renato.externo@petacorp.com.br)
