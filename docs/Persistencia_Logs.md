@@ -25,7 +25,7 @@ Para garantir persistência e acesso externo, esse diretório deve ser **montado
 /opt/app/log
 ```
 
-Este padrão deve ser aplicado a todos os serviços.
+> ⚠️ **Atenção**: Este padrão deve ser aplicado a todos os serviços.
 
 ---
 
@@ -47,19 +47,13 @@ O caminho real passa a ser:
 /opt/app/log/<arquivo>.log
 ```
 
-
-Esse é o diretório que precisa ser mapeado no `docker-compose.yml`.
+> ⚠️ **Atenção**: Esse é o diretório que precisa ser mapeado no `docker-compose.yml`.
 
 ---
 
 ## ⚙️ 3. Configuração do bind-mount no docker-compose
 
 Para cada API, adicione o volume:
-
-```yaml
-volumes:
-- ./logs/<service-name>:/opt/app/log
-```
 
 Exemplos:
 🔄 Licensing Client
@@ -86,10 +80,10 @@ volumes:
 volumes:
   - ./logs/management:/opt/app/log
 ```
-> 💡 Dica: Não precisa criar manualmente as pastas do host — o Docker cria automaticamente.
+
+> 💡 **Dica**: Não precisa criar manualmente as pastas do host — o Docker cria automaticamente.
 
 ### 3.1 Exemplo de Configuração completa
-
 
 ```yaml
 services:
@@ -131,12 +125,13 @@ services:
 Alteração de volumes requer recriação dos contêineres.
 
 Execute:
+
 ```bash
 docker compose down
 docker compose up -d
 ```
 
-> Isso garante que os novos bind-mounts sejam aplicados corretamente.
+> ⚠️ **Esperado**: Garante que os novos bind-mounts sejam aplicados corretamente.
 
 ---
 ## 🧪 5. Validação da Persistência
@@ -146,9 +141,10 @@ docker compose up -d
 ls logs/<service-name>
 ```
 
-Os arquivos devem ser criados quando a API gerar logs.
+> ⚠️ **Esperado**: Os arquivos devem ser criados quando a API gerar logs.
 
 ### ✔️ 5.2 Validar montagem do volume
+
 ```bash
 docker inspect <container> --format '{{ .Mounts }}'
 ```
@@ -158,7 +154,7 @@ Saída esperada:
 {bind /.../logs/auth /opt/app/log}
 ```
 
-> Indica que o bind-mount está ativo.
+> ⚠️ **Esperado**: Indica que o bind-mount está ativo.
 
 ---
 
@@ -167,7 +163,7 @@ Saída esperada:
 tail -f logs/<service-name>/<arquivo>.log
 ```
 
-> Ao acessar qualquer endpoint da API, as entradas devem aparecer instantaneamente.
+> ⚠️ **Esperado**: Ao acessar qualquer endpoint da API, as entradas devem aparecer instantaneamente.
 
 ### ✔️ 5.4 Comparar host × contêiner
 Dentro do contêiner:
@@ -180,7 +176,7 @@ No host:
 ls logs/<service-name>
 ```
 
-> Ambos devem listar os mesmos arquivos.
+> ⚠️ **Esperado**: Ambos devem listar os mesmos arquivos.
 
 ---
 
@@ -194,7 +190,7 @@ docker compose up -d
 ls logs/<service-name>
 ```
 
-Os arquivos devem permanecer no host.
+⚠️ **Esperado**: Os arquivos devem permanecer no host.
 
 ---
 ## 📁 7. Estrutura recomendada de diretórios
@@ -209,13 +205,13 @@ logs/
    management/
 ```
 
-> Cada API mantém seus logs isolados para facilitar observabilidade e auditoria.
+> ⚠️ **Dica**:Cada API mantém seus logs isolados para facilitar observabilidade e auditoria.
 
 ---
 
 ## 📝 8. Considerações Técnicas
 
-* O caminho /opt/app/log deve ser mantido como padrão oficial para todas as APIs.
+* O caminho **/opt/app/log** deve ser mantido como padrão oficial para todas as APIs.
 * Não escreva logs diretamente em caminhos fora desse diretório.
 * O uso desse padrão facilita integrações futuras com:
   * 📊 Grafana + Loki
