@@ -1,4 +1,4 @@
-## 🔍 Visão Geral
+# 📑 Índice da Documentação – Intellistor Solution
 
 Este repositório reúne toda a documentação relacionada à **Intellistor Solution**, servindo como referência única para desenvolvedores, analistas, gestores e demais colaboradores.
 
@@ -26,8 +26,6 @@ Diretrizes para escrita de código, organização de repositórios, nomenclatura
 O calendário de alocação é essencial para garantir previsibilidade, otimizar recursos e alinhar entregas com a capacidade real da equipe.<br>
 ➡️ [Calendário](docs/sprints.md)<br>
 
-
-
 ---
 ## 📘 Guia de Uso
 
@@ -47,7 +45,9 @@ Confira nosso guia de contribuição:
 
 Em caso de dúvidas, sugestões ou contribuições, entre em contato com os mantenedores:
 
-- **Eloi Salton** — [eloi.externo@petacorp.com.br](mailto:eloi.externo@petacorp.com.br)
-- **Lucas Assis Pereira** - [lucas.pereira@petacorp.com.br](lucas.pereira@petacorp.com.br)
-- **Renato de Carvalho Machado** — [renato.externo@petacorp.com.br](mailto:renato.externo@petacorp.com.br)
+- 🌐 **Site comercial da solução** — [www.intellistor.com](https://www.intellistor.com)
+- 📧 **Eloi Salton** — [eloi.externo@petacorp.com.br](mailto:eloi.externo@petacorp.com.br)
+- 📧 **Lucas Assis Pereira** — [lucas.pereira@petacorp.com.br](lucas.pereira@petacorp.com.br)
+- 📧 **Renato de Carvalho Machado** — [renato.externo@petacorp.com.br](mailto:renato.externo@petacorp.com.br)
 
+© Intellistor Solution – Todos os direitos reservados
