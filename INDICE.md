@@ -21,6 +21,7 @@ Diretrizes para escrita de código, organização de repositórios, nomenclatura
 ➡️ [Padrões de Nomenclatura - Classes e Funções](docs/nomenclatura_class_funcao.md)<br>
 ➡️ [Modelo de História de Usuário (HU)](docs/modelo_hu.md)<br>
 ➡️ [Configuração de Persistência de LOGs](docs/Persistencia_Logs.md)<br>
+➡️ [Padrão de Evento de LOGs](docs/Padrao_Evento_Logs.md)<br>
 ➡️ [Padrão de Status Codes das APIs](docs/padrao_status_code.md)<br>
 ➡️ [Processo de Deploy em Produção](docs/processo_deploy.md)<br
 
