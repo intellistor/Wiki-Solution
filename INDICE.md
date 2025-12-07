@@ -16,14 +16,14 @@ Diagramas, fluxos e explicações sobre os componentes que compõem a solução.
 ## 🧑‍💻 Padrões de Desenvolvimento
 
 Diretrizes para escrita de código, organização de repositórios, nomenclaturas e boas práticas.  
-➡️ [Ritos e Cerimônias](docs/ritos.md)<br>
-➡️ [Padrões de Nomenclatura - Módulos](docs/nomenclatura_modulos.md)<br>
-➡️ [Padrões de Nomenclatura - Classes e Funções](docs/nomenclatura_class_funcao.md)<br>
-➡️ [Modelo de História de Usuário (HU)](docs/modelo_hu.md)<br>
 ➡️ [Configuração de Persistência de LOGs](docs/Persistencia_Logs.md)<br>
+➡️ [Modelo de História de Usuário (HU)](docs/modelo_hu.md)<br>
 ➡️ [Padrão de Evento de LOGs](docs/Padrao_Evento_Logs.md)<br>
 ➡️ [Padrão de Status Codes das APIs](docs/padrao_status_code.md)<br>
-➡️ [Processo de Deploy em Produção](docs/processo_deploy.md)<br
+➡️ [Padrões de Nomenclatura - Classes e Funções](docs/nomenclatura_class_funcao.md)<br>
+➡️ [Padrões de Nomenclatura - Módulos](docs/nomenclatura_modulos.md)<br>
+➡️ [Processo de Deploy em Produção](docs/processo_deploy.md)<br>
+➡️ [Ritos e Cerimônias](docs/ritos.md)<br>
 
 ---
 ## 📅 Calendário das Sprints do 2º Semestre de 2025
