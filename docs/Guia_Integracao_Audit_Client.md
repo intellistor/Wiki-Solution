@@ -137,20 +137,10 @@ def create_cluster(
 ):
     try:
         identity = jwt_identity.get()
-        logger.info(
-            f"[CLUSTER] Solicitação de registro do cluster '{body.name}' realizada por {identity}"
-        )
 
-        """Converte o body em dict"""
-        dados = body.dict()
-
-        """Insere na base SQL"""
-        result, status_code = TabelaCluster.insert_ic_cluster(dados)
-        if status_code != 200:
-            return default_error(
-                error_msg=translate_msg("msg.error.general", msg_error=result),
-                code_erro=status_code,
-            )
+        """
+        Corpo da função rota... 
+        """
 
         """Registra o evento de LOG de auditoria (integração com API AUTH)"""
         event = build_audit_event(
