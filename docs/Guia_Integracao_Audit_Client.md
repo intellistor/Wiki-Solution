@@ -1,4 +1,3 @@
-
 ## 📦 Audit Client Module – Guia de Implementação para Envio de Eventos à API Auth
 
 ```markdown
@@ -94,7 +93,7 @@ Envia o evento para a API Auth via requests.post():
 * Não deixa erro de rede quebrar o fluxo da API Client
 
 ⚠️ **Atenção**:
-> Se falhar, ele retorna None e registra log interno — sem nunca impactar o usuário final.
+> Se falhar todas as tentativas de 'retry', ele retorna None e registra no arquivo de LOG interno do cliente — sem nunca impactar o usuário final.
 
 ### 4. config/settings.py
 
@@ -106,6 +105,81 @@ Define variáveis essenciais:
 
 📌  **Importante**:
 > Esse módulo garante que behavior e endpoints sejam configuráveis.
+
+---
+
+## 📄 Fluxo de Retry e Logs Internos
+
+### Retry e Registro de Logs Internos (Resiliência do Cliente)
+
+A função _send_event_to_auth()_ implementa um mecanismo de resiliência para garantir que qualquer API cliente continue operando normalmente mesmo que a API Auth esteja temporariamente indisponível durante o envio de eventos de auditoria.
+
+O fluxo consiste em:
+1. Envio normal do evento para a Auth
+2. Em caso de falha, realização automática de retries com backoff exponencial
+3. Caso todas as tentativas falhem, o evento é registrado integralmente no log local para rastreabilidade
+4. A aplicação segue funcionando sem bloqueios
+
+### Política de tratamento de códigos HTTP da API Auth
+
+Os códigos de resposta são divididos em erros recuperáveis (com retry) e erros permanentes (sem retry):
+
+🟢 Erros recuperáveis — retry permitido
+
+| Código  | Significado                  | Ação             |
+| ------- | ---------------------------- | ---------------- |
+| **500** | Erro interno da Auth         | Tentar novamente |
+| **503** | Auth indisponível / overload | Tentar novamente |
+
+🔴 Erros permanentes — retry NÃO resolve
+
+| Código  | Significado             | Motivo                 | Ação            |
+| ------- | ----------------------- | ---------------------- | --------------- |
+| **401** | Token M2M inválido      | Erro de autenticação   | Não fazer retry |
+| **403** | Serviço sem permissão   | Erro de autorização    | Não fazer retry |
+| **404** | Endpoint não encontrado | Configuração incorreta | Não fazer retry |
+
+### Estratégia de Retry
+O módulo aplica backoff exponencial:
+* 1ª tentativa → no ato
+* 2ª tentativa → 1 segundo
+* 3ª tentativa → 2 segundos
+* 4ª tentativa → 4 segundos
+
+Essa estratégia reduz carga no servidor e evita tempestades de requests durante quedas.
+
+### Registro de Log Local (Fallback)
+
+Se, após todas as tentativas, a comunicação com a API Auth permanecer indisponível, o evento não é perdido silenciosamente.
+O cliente registra em log:
+* O erro final
+* Todas as exceções capturadas
+* O payload completo que seria enviado à Auth
+
+Exemplo do log gerado:
+
+```csharp
+[AUDIT] Todas as tentativas falharam. Evento PERDIDO.
+[AUDIT] EVENTO PERDIDO (payload final): {
+    "uid_user": "mock_user_key_12345",
+    "event": "CREATE",
+    "action": "Cluster created",
+    "input_event": {...},
+    "output_event": {...},
+    "origem": "management"
+}
+``` 
+
+📌  **Importante**:
+> Isso garante rastreabilidade total mesmo sem fila ou buffer persistente em banco. Como os serviços da Intellistor utilizam bind-mount para persistir o diretório de logs fora do container, o registro do evento perdido permanece disponível mesmo que o container seja recriado, reiniciado ou substituído. Dessa forma, nenhuma informação de auditoria é perdida — o payload completo fica armazenado no log local e pode ser consultado ou reprocessado posteriormente.
+
+### Resumo do Comportamento do Cliente em Caso de Falha
+
+* A API cliente não trava
+* O fluxo de negócio do usuário não é afetado
+* Retries são executados de forma assíncrona via BackgroundTask
+* Se nada funcionar, o log local preserva todas as informações
+* O evento pode ser reprocessado manualmente se necessário
 
 ---
 ## 🧠 Fluxo completo do módulo audit_client
