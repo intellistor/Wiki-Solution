@@ -182,6 +182,32 @@ Exemplo do log gerado:
 * O evento pode ser reprocessado manualmente se necessário
 
 ---
+
+## 📤 Envio de E-mail em caso de falha do retry
+
+O módulo **audit_client** implementa um mecanismo de alerta automático via e-mail para casos em que o evento de auditoria não puder ser registrado na API Auth após todas as tentativas de retry.
+
+O fluxo completo funciona da seguinte forma:
+1. O **audit_client** tenta enviar o evento para a API Auth.
+2. Em caso de falha, o módulo aplica até 4 tentativas com backoff exponencial.
+3. Se todas falharem, o evento é marcado como não entregue.
+4. O payload é preservado integralmente no log local da aplicação, garantindo rastreabilidade.
+5. Um e-mail é enviado automaticamente para os destinatários configurados, contendo:
+    * resumo do evento
+    * horário
+    * identificação da origem
+    * orientação técnica para verificação da API Auth
+
+📌  **Importante**:
+> Este mecanismo garante visibilidade imediata ao time responsável e evita perda de auditoria mesmo em cenários de indisponibilidade temporária.
+
+Em caso de falha definitiva:
+* Retry executado → até 4 tentativas (1s, 2s, 4s, 8s)
+* Persistência local → payload salvo inteiramente em /opt/app/log/...
+* Alerta → sistema dispara um e-mail automático para os administradores
+* Ação recomendada → verificar saúde da API Auth e restabelecer conectividade
+
+---
 ## 🧠 Fluxo completo do módulo audit_client
 ```scss
 1) Rota executa regra de negócio
