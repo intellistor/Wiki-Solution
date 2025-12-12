@@ -17,7 +17,7 @@ Diagramas, fluxos e explicações sobre os componentes que compõem a solução.
 
 Diretrizes para escrita de código, organização de repositórios, nomenclaturas e boas práticas.  
 ➡️ [Configuração de Persistência de LOGs](docs/Persistencia_Logs.md)<br>
-➡️ [Criacao e Distribuição de SDKs](docs/Criacao_Distribuição_SDKs.md)<br>
+➡️ [Criação e Distribuição de SDKs](docs/Criacao_Distribuição_SDKs.md)<br>
 ➡️ [Guia Prático do módulo 'audit_client' para LOGs Auditáveis](docs/Guia_Integracao_Audit_Client.md)<br>
 ➡️ [Modelo de História de Usuário (HU)](docs/modelo_hu.md)<br>
 ➡️ [Padrão de Evento de LOGs](docs/Padrao_Evento_Logs.md)<br>
