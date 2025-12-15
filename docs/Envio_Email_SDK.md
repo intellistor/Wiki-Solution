@@ -107,7 +107,8 @@ send_email(
 ```
 
 ---
-## 👉  **Exemplo completo utilizado em APIs Intellistor**
+## 👉  **Exemplos de uso rotas e módulos**
+Em rota:
 ```python
 from fastapi import APIRouter
 from intellistor_email.email_smtp_client import send_email
@@ -128,6 +129,28 @@ def notify(email: str):
     )
 
     return {"sent": ok}
+```
+
+Em módulo simples:
+```python
+from intellistor_email.email_smtp_client import send_email
+from canivete_macgyver.petacorp.smtp.templates_email import reset_password
+
+
+if __name__ == "__main__":
+
+    message_html = reset_password(user="Renato")
+
+    send_email(
+        body=message_html,
+        filename=None,
+        subject="Alteração de Senha Intellistor Platform",
+        email_to="intellistor.br@gmail.com",
+        email_bcc=[
+            "renato.externo@petacorp.com.br"
+        ]
+    )
+
 ```
 
 ---
