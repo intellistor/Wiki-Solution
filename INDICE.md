@@ -27,7 +27,7 @@ Diretrizes para escrita de código, organização de repositórios, nomenclatura
 ➡️ [Processo de Deploy em Produção](docs/processo_deploy.md)<br>
 ➡️ [Ritos e Cerimônias](docs/ritos.md)<br>
 ➡️ [SDK - Envio de Email](docs/Envio_Email_SDK.md)<br>
-➡️ [SDK - M2M](docs/M2M_SDK.md)<br>
+➡️ [SDK - M2M](#)<br>
 
 ---
 ## 📅 Calendário das Sprints do 2º Semestre de 2025
