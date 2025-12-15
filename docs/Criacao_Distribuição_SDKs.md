@@ -135,6 +135,7 @@ version = "1.1.0"
 ```
 Gere o novo pacote:
 ```bash
+pip install build
 python -m build
 ```
 Substitua no repo do serviço:
