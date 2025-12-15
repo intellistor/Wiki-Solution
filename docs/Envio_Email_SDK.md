@@ -19,16 +19,64 @@ packages/
 ```
 
 ---
-## ✅ **Instalação**
+## 📦 **Instalação da SDK de E-mail via arquivo .whl (padrão Intellistor)**
 
-No terminal (dentro do ambiente virtual da aplicação):
-```bash
+A Intellistor distribui suas SDKs em formato wheel (.whl) para garantir que toda a solução funcione de forma offline, reproduzível e independente de PyPI.
+Para instalar a SDK de E-mail, siga os passos abaixo:
+
+### 1️⃣ **Copie o arquivo .whl para dentro do projeto**
+
+A estrutura esperada da solução é:
+```pgsql
+intellistor_solution/
+├── api_auth/
+├── api_management/
+├── api_integrator/
+├── packages/
+│   ├── intellistor_email_sdk-1.0.0-py3-none-any.whl   ← coloque aqui
+│   ├── intellistor_audit_sdk-*.whl
+│   └── intellistor_m2m_sdk-*.whl
+├── docker-compose.yml
+└── requirements.txt
+```
+> O diretório packages/ é o repositório local de dependências da solução.
+
+### 2️⃣ **Adicione a dependência ao requirements.txt**
+
+Dentro do requirements.txt da API (AUTH, Management etc.) inclua:
+
+```pqsql
+./packages/intellistor_email_sdk-1.0.0-py3-none-any.whl
+```
+
+Ou, de forma genérica:
+```pqsql
+./packages/intellistor_email_sdk-*.whl
+```
+
+Isso garante que:
+* Instalações futuras serão automáticas (pip install -r requirements.txt)
+* CI/CD interno saberá como instalar
+* Ambientes DEV/HML/PRD ficam idênticos
+
+### 3️⃣ **Instale a SDK usando o pip apontando para o arquivo local**
+
+No terminal (dentro do seu venv):
+```pqsql
 pip install ./packages/intellistor_email_sdk-*.whl --force-reinstall
 ```
-Ou especificando a versão:
-```bash
+
+Ou especificando a versão exata:
+```pqsql
 pip install ./packages/intellistor_email_sdk-1.0.0-py3-none-any.whl --force-reinstall
 ```
+
+### 🎯 **Resumo rápido para o Dev**
+
+✔ Copie o .whl para packages/<br>
+✔ Adicione ao requirements.txt<br>
+✔ Rode pip install apontando para o .whl<br>
+✔ Importe e use normalmente<br>
 
 ---
 ## 📂 **Estrutura recomendada do repositório cliente**
