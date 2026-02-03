@@ -246,10 +246,29 @@ s3://<AWS_S3_BUCKET>/logs/mvp-default/
 ---
 ## 6️⃣ Execução Agendada via Windows Task Scheduler
 
-### Exemplo
+### Cria e Testa o _schedule_
 
 ```bat
+intellistor-agent apply-schedule --policy-id mvp-default --cron "0 2 * * *" --policy-path policies\policy_01.yaml --out out_agent
 intellistor-agent test-schedule --policy-id mvp-default
+```
+
+### Confirma o _schedule_
+```bat
+schtasks /Query /TN "IntellistorAgent - mvp-default" /V /FO LIST | findstr /I "Último resultado Horário"
+```
+
+### Saída esperada do _schtasks_
+```text
+Horário da última execução:                              03/02/2026 15:30:43
+Último resultado:                                        0
+Repetir: até: horário:                                   Desativado
+```
+
+### Remove o _schedule_
+
+```bat
+intellistor-agent remove-schedule --policy-id mvp-default
 ```
 
 ### Comportamento
