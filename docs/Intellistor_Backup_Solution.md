@@ -1,7 +1,7 @@
-# 📦 Intellistor Backup Client – Guia Rápido (MVP)
+# 📦 Intellistor Backup Solution – Guia Rápido (MVP)
 
 **Data:** 01/02/2026<br>
-**Escopo:** MVP funcional do Intellistor Backup Client (SDK + Agent + Agendamento Windows)<br>
+**Escopo:** MVP funcional do Intellistor Backup Solution (SDK + Agent + Agendamento Windows)<br>
 **Objetivo:** Demonstrar um MVP funcional de Backup/Restore com criptografia, manifest, agendamento automático no Windows (Task Scheduler) e upload do objeto de backup, juntamente com os logs organizados por *policy_id*, para o S3.
 
 ---
@@ -174,7 +174,7 @@ backup-client restore \
 ---
 ## ▶️ Video 
 
-[Video do MVP]()
+[Video do MVP](#)
 
 ---
 
