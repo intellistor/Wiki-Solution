@@ -172,9 +172,126 @@ backup-client restore \
 4. (Opcional) Ajustar `--only` para restore seletivo  
 
 ---
-## ▶️ Video 
+## 3️⃣ Pergunta que este documento responde
 
-[Video do MVP](#)
+> **A execução manual também gera os logs em**
+> `C:\ProgramData\Intellistor\Agent\logs\<policy_id>`
+> e em
+> `s3://<bucket>/logs/<policy_id>`?
+
+**Resposta curta:**<br>
+❌ **Não quando executada diretamente via SDK**<br>
+✅ **Sim quando executada via Agent (manual ou agendada)**
+
+---
+## 4️⃣ Execução Manual via SDK (backup-client)
+
+### Exemplo
+
+```bat
+backup-client --env-file .\.env backup --policy policies\policy_01.yaml --out .\out
+```
+
+### Comportamento
+
+* Logs **existem apenas no console** (stdout/stderr)<br>
+* Logger do **SDK** (`backup_client_sdk`)<br>
+* Execução **stateless**
+
+### O que NÃO acontece
+
+* ❌ Não cria diretório em `C:\ProgramData\Intellistor\Agent\logs`<br>
+* ❌ Não gera arquivos `.log` persistidos<br>
+* ❌ Não envia logs para o S3
+
+### Justificativa arquitetural
+
+O SDK é um **motor técnico reutilizável**, sem responsabilidade por:
+
+* auditoria
+* governança
+* rastreabilidade operacional
+
+---
+## 5️⃣ Execução via Agent (intellistor-agent run)
+
+### Exemplo
+
+```bat
+intellistor-agent run --policy policies\policy_01.yaml --out out_agent --env-file .\.env
+```
+
+### Comportamento
+
+* Cria logs **segregados por policy_id**
+* Persiste logs localmente
+* Envia logs automaticamente para o S3
+
+### Logs locais gerados
+
+```text
+C:\ProgramData\Intellistor\Agent\logs\mvp-default\
+ ├── last.log
+ └── run_<timestamp>.log
+```
+
+### Logs enviados ao S3
+
+```text
+s3://<AWS_S3_BUCKET>/logs/mvp-default/
+ ├── last.log
+ └── run_<timestamp>.log
+```
+
+---
+## 6️⃣ Execução Agendada via Windows Task Scheduler
+
+### Exemplo
+
+```bat
+intellistor-agent test-schedule --policy-id mvp-default
+```
+
+### Comportamento
+
+✔️ Mesmo comportamento da execução manual via Agent:
+
+* Logs locais
+* Logs no S3
+* Exit code rastreável
+* Evidência para auditoria
+
+---
+## 7️⃣ Tabela-resumo
+
+| Forma de Execução | Log Local (ProgramData) | Log no S3 |
+| ----------------- | ----------------------- | --------- |
+| SDK direto        | ❌ Não                   | ❌ Não     |
+| Agent manual      | ✅ Sim                   | ✅ Sim     |
+| Agent agendado    | ✅ Sim                   | ✅ Sim     |
+
+
+---
+## 8️⃣ Regra Operacional Oficial
+
+> **Toda execução que precise gerar evidência, rastreabilidade ou atender auditoria deve ser feita exclusivamente via `intellistor-agent`.**
+
+Execuções diretas do SDK são recomendadas apenas para:
+
+* desenvolvimento
+* testes locais
+* troubleshooting pontual
+
+---
+
+## 9️⃣ Conclusão
+
+A separação entre SDK e Agent **é intencional e estratégica**:
+
+* **SDK** → engine técnica, simples, reutilizável
+* **Agent** → camada operacional, auditável e governada
+
+Esse desenho garante clareza, reduz risco regulatório e prepara o caminho para um futuro **Control Plane multi-tenant**.
 
 ---
 ## 📬 **Contato**
@@ -186,5 +303,5 @@ Em caso de dúvidas, sugestões ou contribuições, entre em contato com os mant
 - 📧 **Lucas Assis Pereira** — [lucas.pereira@petacorp.com.br](lucas.pereira@petacorp.com.br)
 - 📧 **Renato de Carvalho Machado** — [renato.externo@petacorp.com.br](mailto:renato.externo@petacorp.com.br)
 
-© Intellistor Solution – Todos os direitos reservados
+© Intellistor Solution – Todos os direitos reservados<br>
 _Simplicidade operacional, controle e segurança._
