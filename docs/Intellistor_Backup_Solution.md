@@ -157,7 +157,7 @@ backup-client restore \
   ```text
   backup.tar.gz.enc
   ```
-  O `manifest.json` é derivado automaticamente.
+- O `manifest.json` é derivado automaticamente.
 - O restore não sobrescreve arquivos fora do diretório `--out`.
 - Criptografia: **AES-256-GCM client-side**
 - Formato: **tar + gzip**, com restore controlado.
