@@ -3,7 +3,8 @@
 **Wiki Solution** é o repositório central de documentação técnica e funcional da **Intellistor Solution**.  
 Seu objetivo é reunir, organizar e manter acessível todo o conhecimento necessário para o desenvolvimento, manutenção e evolução dos sistemas que compõem o projeto.
 <br><br>
-🔗 Para informações comerciais, planos de licenciamento e soluções aplicadas ao mercado, acesse o site oficial: [www.intellistor.com.br](https://www.intellistor.com.br)
+🔗 Para informações comerciais, planos de licenciamento e soluções aplicadas ao mercado, acesse o site oficial: 🌐 [www.intellistor.com.br](https://www.intellistor.com.br)<br>
+🔗 Para acompanhar atualizações e navegar pela documentação, acesse o índice principal: 📌 [`INDICE.md`](INDICE.md)  
 
 ---
 
@@ -19,13 +20,6 @@ Este espaço funciona como uma **wiki colaborativa**, onde equipes podem consult
 - Histórico de decisões técnicas
 
 A proposta é facilitar a comunicação entre times, promover consistência e garantir que o conhecimento esteja sempre atualizado e disponível.
-
----
-
-## 📌 Documento Principal
-
-Para acompanhar atualizações e navegar pela documentação, acesse o índice principal:  
-➡️ [`INDICE.md`](INDICE.md)
 
 ---
 
