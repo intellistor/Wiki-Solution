@@ -10,6 +10,7 @@ Este repositório reúne toda a documentação relacionada à **Intellistor Solu
 
 Diagramas, fluxos e explicações sobre os componentes que compõem a solução.  
 ➡️ [Intellistor Solution](docs/Intellistor_Solution.md)
+➡️ [Intellistor Backup Solution](docs/Intellistor_Backup_Solution.md)
 
 ---
 
