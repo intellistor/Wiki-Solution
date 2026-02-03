@@ -44,3 +44,4 @@ Em caso de dúvidas, sugestões ou contribuições, entre em contato com os mant
 - 📧 **Renato de Carvalho Machado** — [renato.externo@petacorp.com.br](mailto:renato.externo@petacorp.com.br)
 
 © Intellistor Solution – Todos os direitos reservados
+_Simplicidade operacional, controle e segurança._
