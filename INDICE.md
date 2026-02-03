@@ -9,7 +9,7 @@ Este repositório reúne toda a documentação relacionada à **Intellistor Solu
 ## 🏗️ Arquitetura da Solução
 
 Diagramas, fluxos e explicações sobre os componentes que compõem a solução.  
-➡️ [Intellistor Solution](docs/Intellistor_Solution.md)<br>
+➡️ [Intellistor Platform](docs/Intellistor_Solution.md)<br>
 ➡️ [Intellistor Backup Solution](docs/Intellistor_Backup_Solution.md)
 
 ---
