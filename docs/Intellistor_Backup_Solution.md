@@ -300,7 +300,7 @@ Execuções diretas do SDK são recomendadas apenas para:
 * desenvolvimento
 * testes locais
 * troubleshooting pontual
-* [Guia de Comandos](#)
+* [Guia de Comandos](docs/Guia_Comandos_Backup_Solution.md)
 
 ---
 
