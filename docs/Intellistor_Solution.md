@@ -199,6 +199,7 @@ Em caso de dúvidas, sugestões ou contribuições, entre em contato com os mant
 - 📧 **Lucas Assis Pereira** — [lucas.pereira@petacorp.com.br](lucas.pereira@petacorp.com.br)
 - 📧 **Renato de Carvalho Machado** — [renato.externo@petacorp.com.br](mailto:renato.externo@petacorp.com.br)
 
-© Intellistor Solution – Todos os direitos reservados
+© Intellistor Solution – Todos os direitos reservados<br>
+_Simplicidade operacional, controle e segurança._
 
         
