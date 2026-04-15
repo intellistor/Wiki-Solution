@@ -26,6 +26,7 @@ Diretrizes para escrita de código, organização de repositórios, nomenclatura
 ➡️ [Padrões de Nomenclatura - Classes e Funções](docs/nomenclatura_class_funcao.md)<br>
 ➡️ [Padrões de Nomenclatura - Módulos](docs/nomenclatura_modulos.md)<br>
 ➡️ [Processo de Deploy em Produção](docs/processo_deploy.md)<br>
+➡️ [Workflows no GitHub Actions](docs/Workflows_GitHub_Actions.md)<br>
 ➡️ [Ritos e Cerimônias](docs/ritos.md)<br>
 ➡️ [SDK - Envio de Email](docs/Envio_Email_SDK.md)<br>
 ➡️ [SDK - M2M](#)<br>
